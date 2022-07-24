@@ -16,7 +16,7 @@ module DebookBackRuby
 
     config.autoload_paths << Rails.root.join('lib/logger')
     config.eager_load_paths << Rails.root.join("lib/logger")
-    # Configuration for the application, engines, and railties goes here.
+    config.autoloader = :classic
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
